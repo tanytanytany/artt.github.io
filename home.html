@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20220509204231" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		.preloader {
+			transition: all 0.3s ease 0s;
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			background: #2c3339;
+			z-index: 1001;
+		}
+
+		.preloader__image {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			width: 70px;
+			height: 70px;
+			margin-top: -35px;
+			margin-left: -35px;
+			text-align: center;
+			animation: preloader-rotate 2s infinite linear;
+		}
+
+		@keyframes preloader-rotate {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="preloader">
+		<svg class="preloader__image" role="img" width="70px" height="70px" viewBox="0 0 520 520">
+			<path fill="#F1A501" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<div class="header">
+			<div class="header__container">
+				<div class="header__logo logo">
+					<a href="" class=""><span>АРТ</span> Ремонт</a>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" data-goto="home" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto="advantages" class="menu__link">Преимущества</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto="reviews" class="menu__link">Отзывы</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto="works" class="menu__link">Работы</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto="order" class="menu__link">Заявка</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</div>
+
+		<div class="page">
+			<section id="home" class="page__main main">
+				<a href="" name="home" class=""></a>
+				<div class="main__container">
+					<div class="main__content">
+						<h1 class="main__title">
+							<span> APT Ремонт</span> просто и профессионально!
+						</h1>
+						<div class="main__bottom">
+							<a href="#" data-goto="order" class="main__button button">Отправить заявку</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="advantages" class="page__advantages advantages">
+				<div class="advantages__container">
+					<h2 class="advantages__title title">Наши перимущества</h2>
+					<div class="advantages__items">
+						<div class="advantages__item">
+							<a href class="advantages__text">Фиксированная стоимоcть и прозрачная смета
+							</a>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								Только проверенные подрядчики
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								Строгое соблюдение сроков и проекта
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								Удобная форма оплаты и рассрочка до 3 месяцев
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								Ежедневный фотоотчет о проделанной работе
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__text">
+								Гарантия на качество выполнения работ 1 год
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="works" class="page__works works">
+				<div class="works__container">
+					<h2 class="works__title title">Наши работы</h2>
+					<div class="works__items">
+						<div class="works__item works-item">
+							<span class="works-item__sale">30%</span>
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/01.webp" type="image/webp"><img src="img/works/01.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+
+							<div class="works-item__body">
+								<h3 class="works-item__title">РЕМОНТ КВАРТИРЫ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">14 дней</div>
+								</div>
+							</div>
+						</div>
+						<div class="works__item works-item">
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/02.webp" type="image/webp"><img src="img/works/02.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+							<div class="works-item__body">
+								<h3 class="works-item__title">КВАРТИРЫ ПОД КЛЮЧ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">36 дней</div>
+								</div>
+							</div>
+						</div>
+						<div class="works__item works-item">
+							<span class="works-item__sale">10%</span>
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/03.webp" type="image/webp"><img src="img/works/03.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+
+							<div class="works-item__body">
+								<h3 class="works-item__title">РЕМОНТ КВАРТИРЫ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">26 дней</div>
+								</div>
+							</div>
+						</div>
+						<div class="works__item works-item">
+							<span class="works-item__sale">30%</span>
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/04.webp" type="image/webp"><img src="img/works/04.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+
+							<div class="works-item__body">
+								<h3 class="works-item__title">РЕМОНТ КВАРТИРЫ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">30 дней</div>
+								</div>
+							</div>
+						</div>
+						<div class="works__item works-item">
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/05.webp" type="image/webp"><img src="img/works/05.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+
+							<div class="works-item__body">
+								<h3 class="works-item__title">РЕМОНТ КВАРТИРЫ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">14 дней</div>
+								</div>
+							</div>
+						</div>
+						<div class="works__item works-item">
+							<span class="works-item__sale">20%</span>
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/06.webp" type="image/webp"><img src="img/works/06.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+							<div class="works-item__body">
+								<h3 class="works-item__title">КВАРТИРЫ ПОД КЛЮЧ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">36 дней</div>
+								</div>
+							</div>
+						</div>
+						<div class="works__item works-item">
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/07.webp" type="image/webp"><img src="img/works/07.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+
+							<div class="works-item__body">
+								<h3 class="works-item__title">РЕМОНТ КВАРТИРЫ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">26 дней</div>
+								</div>
+							</div>
+						</div>
+						<div class="works__item works-item">
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/08.webp" type="image/webp"><img src="img/works/08.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+
+							<div class="works-item__body">
+								<h3 class="works-item__title">РЕМОНТ КВАРТИРЫ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">30 дней</div>
+								</div>
+							</div>
+						</div>
+						<div class="works__item works-item">
+							<div class="works-item__image-ibg">
+								<picture><source srcset="img/works/09.webp" type="image/webp"><img src="img/works/09.jpg?_v=1652118151738" alt="" /></picture>
+							</div>
+
+							<div class="works-item__body">
+								<h3 class="works-item__title">РЕМОНТ КВАРТИРЫ</h3>
+								<div class="works-item__content">
+									<div class="works-item__prices">
+										<div class="works-item__price">510 000</div>
+										<div class="works-item__price works-item__price_old">
+											510 000
+										</div>
+									</div>
+									<div class="works-item__time">30 дней</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="reviews" class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Отзывы наших клиентов</h2>
+
+					<div class="reviews__body">
+						<div class="reviews__slider">
+							<div class="reviews__swiper reviews__items">
+								<div class="reviews__slide">
+									<div class="reviews__item item-reviews">
+										<div class="item-reviews__image">
+											<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.jpg?_v=1652118151738" alt="" /></picture>
+										</div>
+										<div class="item-reviews__content">
+											<div class="item-reviews__text">
+												Уже давненько хотел оставить этой фирме положительный
+												отзыв, дело в том что все свои обязательства по
+												ремонту новой квартиры они выполнили в полном объеме
+											</div>
+											<div class="item-reviews__name">Александра</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide">
+									<div class="reviews__item item-reviews">
+										<div class="item-reviews__image">
+											<picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.jpg?_v=1652118151738" alt="" /></picture>
+										</div>
+										<div class="item-reviews__content">
+											<div class="item-reviews__text">
+												Замечательная компания, отличные работники! Особая
+												благодарность прорабу и мастерам, которые все наши
+												предложения по ремонту квартиры
+											</div>
+											<div class="item-reviews__name">Алексей</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide">
+									<div class="reviews__item item-reviews">
+										<div class="item-reviews__image">
+											<picture><source srcset="img/reviews/03.webp" type="image/webp"><img src="img/reviews/03.jpg?_v=1652118151738" alt="" /></picture>
+										</div>
+										<div class="item-reviews__content">
+											<div class="item-reviews__text">
+												С этой замечательной компанией я сделала шикарный
+												ремонт в своей трехкомнатной квартире. В компании
+												работают адекватные опытные мастера
+											</div>
+											<div class="item-reviews__name">Татьяна</div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide">
+									<div class="reviews__item item-reviews">
+										<div class="item-reviews__image">
+											<picture><source srcset="img/reviews/04.webp" type="image/webp"><img src="img/reviews/04.jpg?_v=1652118151738" alt="" /></picture>
+										</div>
+										<div class="item-reviews__content">
+											<div class="item-reviews__text">
+												Больше всего понравилось то, что компания почти не
+												беспокоит во время ремонта. Такое встречаю впервые,
+												хоть и на своем веку уже не раз заказывала ремонт.
+											</div>
+											<div class="item-reviews__name">Мария</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__arrows">
+							<div class="reviews__arrow reviews__arrow_prev _icon-p-left"></div>
+							<div class="reviews__arrow reviews__arrow_next _icon-p-right"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__sale sale">
+				<div class="sale__container">
+					<h2 class="sale__title">УНИКАЛЬНОЕ ПРЕДЛОЖЕНИЕ!</h2>
+					<div class="sale__text">
+						Скидка 7% при заказе ремонта или рассрочка на 3 месяца
+					</div>
+					<div class="sale__countdown">
+						<h1 class="countdown-title">До конца акции осталось:</h1>
+						<div id="countdown" class="countdown">
+							<div class="countdown-number">
+								<span class="days countdown-time"></span>
+								<span class="countdown-text">Дней</span>
+							</div>
+							<div class="countdown-number">
+								<span class="hours countdown-time"></span>
+								<span class="countdown-text">Часов</span>
+							</div>
+							<div class="countdown-number">
+								<span class="minutes countdown-time"></span>
+								<span class="countdown-text">Минут</span>
+							</div>
+							<div class="countdown-number">
+								<span class="seconds countdown-time"></span>
+								<span class="countdown-text">Секунд</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__stages stages">
+				<div class="stages__container">
+					<h2 class="stages__title title">Этапы нашей работы</h2>
+					<div class="stages__items">
+						<div class="stages__item">
+							<span>1</span>
+							<div class="stages__text">
+								Осмотриваем объект и утверждаем проект, смету и договор
+							</div>
+						</div>
+
+						<div class="stages__item">
+							<span>2</span>
+							<div class="stages__text">
+								Закупаем материалы и выполнение работ
+							</div>
+						</div>
+
+						<div class="stages__item">
+							<span>3</span>
+							<div class="stages__text">Производим ремонтные работы</div>
+						</div>
+
+						<div class="stages__item">
+							<span>4</span>
+							<div class="stages__text">Подписываем акт сдачи объекта</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="order" class="page__order order">
+				<div class="order__container">
+					<h2 class="order__title title">Закажите осмотр прямо сейчас!</h2>
+					<form class="form" action="sendmail.php" method="POST" data-ajax>
+						<div class="order__items">
+							<div class="order__item">
+								<input autocomplete="off" type="text" name="name" placeholder="Имя" class="input" data-validate data-error="Введите ваше имя" />
+							</div>
+							<div class="order__item">
+								<input data-required="email" autocomplete="off" name="email" type="email" data-validate data-error="Введите корректный адрес электронной почты" placeholder="Электронная почта" class="input" />
+							</div>
+							<div class="order__item">
+								<input data-required autocomplete="off" name="phone" type="tel" data-validate data-error="Введите номер телефона" placeholder="Номер телефона" class="input" />
+							</div>
+
+							<button id="btn" type="submit" href="#" class="order__button button">
+								Заказать осмотр
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo logo">
+					<a href="" class=""><span>АРТ</span> Ремонт</a>
+				</div>
+				<div class="footer__social social">
+					<div class="social__items">
+						<a href="#" class="social__item _icon-instagram"> </a>
+						<a href="#" class="social__item _icon-twitter"> </a>
+						<a href="#" class="social__item _icon-facebook"> </a>
+					</div>
+				</div>
+				<div class="footer__info info">
+					<a href="tel:4868887176671" class="info__tel">+4(886) 661-766-71</a>
+
+					<a href="mailto:remont-prosto73@yandex.ru" class="info__mail">remont-prosto@gmail.com</a>
+					<div class="info__address">
+						г. Минск , Промышленная улица, 15А, офис 409 а
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- <div id="popup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close">Закрыть</button>
+      <div class="popup__text"></div>
+    </div>
+  </div>
+</div> -->
+
+	</div>
+	<script src="js/app.min.js?_v=20220509204231"></script>
+</body>
+
+</html>
